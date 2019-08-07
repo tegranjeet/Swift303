@@ -39,7 +39,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>UIViewControllerBasedStatusBarAppearance</key>
-    <true/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.filltext.com</key>
+			<dict>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
