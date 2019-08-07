@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Person.swift
 //  Swift303
 //
 //  Created by Eric Armstrong on 8/6/19.
@@ -7,7 +7,9 @@
 //
 
 import Foundation
-import UIKit
 
-class ViewController: UIViewController {
+struct Person: Codable {
+    let fname, lname, city: String
 }
+
+typealias People = [Person]

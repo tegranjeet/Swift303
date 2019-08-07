@@ -11,7 +11,13 @@
 		593B747922FA00E100FBC495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 593B747822FA00E100FBC495 /* Assets.xcassets */; };
 		593B747C22FA00E100FBC495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593B747A22FA00E100FBC495 /* LaunchScreen.storyboard */; };
 		593B748722FA00E100FBC495 /* Swift303Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B748622FA00E100FBC495 /* Swift303Tests.swift */; };
-		5996223B22FA44EC0022E729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996223A22FA44EC0022E729 /* ViewController.swift */; };
+		5996224222FA48650022E729 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996223C22FA48640022E729 /* UITableViewExtensions.swift */; };
+		5996224322FA48650022E729 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996223D22FA48640022E729 /* Request.swift */; };
+		5996224422FA48650022E729 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996223E22FA48640022E729 /* PeopleViewController.swift */; };
+		5996224622FA48650022E729 /* PeopleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996224022FA48640022E729 /* PeopleDataSource.swift */; };
+		5996224722FA48650022E729 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5996224122FA48650022E729 /* PersonCell.swift */; };
+		59E069BA22FA54DB00C13D5E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E069B922FA54DB00C13D5E /* Person.swift */; };
+		59E069BF22FA565F00C13D5E /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E069BE22FA565F00C13D5E /* UILabelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,13 @@
 		593B748222FA00E100FBC495 /* Swift303Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift303Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		593B748622FA00E100FBC495 /* Swift303Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift303Tests.swift; sourceTree = "<group>"; };
 		593B748822FA00E100FBC495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5996223A22FA44EC0022E729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5996223C22FA48640022E729 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		5996223D22FA48640022E729 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		5996223E22FA48640022E729 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		5996224022FA48640022E729 /* PeopleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleDataSource.swift; sourceTree = "<group>"; };
+		5996224122FA48650022E729 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		59E069B922FA54DB00C13D5E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		59E069BE22FA565F00C13D5E /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,9 @@
 		593B746522FA00E000FBC495 = {
 			isa = PBXGroup;
 			children = (
+				593B746F22FA00E000FBC495 /* Products */,
 				593B747022FA00E000FBC495 /* Swift303 */,
 				593B748522FA00E100FBC495 /* Swift303Tests */,
-				593B746F22FA00E000FBC495 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +89,11 @@
 			children = (
 				593B747122FA00E000FBC495 /* AppDelegate.swift */,
 				593B747822FA00E100FBC495 /* Assets.xcassets */,
+				59E069BB22FA54F000C13D5E /* Extensions */,
 				593B747D22FA00E100FBC495 /* Info.plist */,
 				593B747A22FA00E100FBC495 /* LaunchScreen.storyboard */,
-				5996223A22FA44EC0022E729 /* ViewController.swift */,
+				59E069BC22FA551900C13D5E /* People */,
+				59E069BD22FA553E00C13D5E /* Util */,
 			);
 			path = Swift303;
 			sourceTree = "<group>";
@@ -91,6 +105,34 @@
 				593B748822FA00E100FBC495 /* Info.plist */,
 			);
 			path = Swift303Tests;
+			sourceTree = "<group>";
+		};
+		59E069BB22FA54F000C13D5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59E069BE22FA565F00C13D5E /* UILabelExtensions.swift */,
+				5996223C22FA48640022E729 /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		59E069BC22FA551900C13D5E /* People */ = {
+			isa = PBXGroup;
+			children = (
+				5996224022FA48640022E729 /* PeopleDataSource.swift */,
+				5996223E22FA48640022E729 /* PeopleViewController.swift */,
+				59E069B922FA54DB00C13D5E /* Person.swift */,
+				5996224122FA48650022E729 /* PersonCell.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		59E069BD22FA553E00C13D5E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5996223D22FA48640022E729 /* Request.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5996223B22FA44EC0022E729 /* ViewController.swift in Sources */,
+				59E069BF22FA565F00C13D5E /* UILabelExtensions.swift in Sources */,
+				5996224422FA48650022E729 /* PeopleViewController.swift in Sources */,
+				5996224722FA48650022E729 /* PersonCell.swift in Sources */,
+				5996224222FA48650022E729 /* UITableViewExtensions.swift in Sources */,
+				5996224322FA48650022E729 /* Request.swift in Sources */,
+				59E069BA22FA54DB00C13D5E /* Person.swift in Sources */,
 				593B747222FA00E000FBC495 /* AppDelegate.swift in Sources */,
+				5996224622FA48650022E729 /* PeopleDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
